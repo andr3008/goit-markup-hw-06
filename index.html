@@ -77,6 +77,40 @@
                 <use href="./images/modal-icon/symbol-defs-modal.svg#icon-Vector-1"></use>
               </svg>
             </button>
+            <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+            <form>
+              <div class="form-field">
+                <label for="name">Имя</label>
+                <input class="modal-form icon-person" type="text" name="user-name" />
+              </div>
+
+              <div class="form-field">
+                <label for="tel">Телефон</label>
+                <input class="modal-form icon-tel" type="tel" name="tel" />
+              </div>
+
+              <div class="form-field">
+                <label for="email">Почта</label>
+                <input class="modal-form icon-mail" type="email" name="email" />
+              </div>
+
+              <div class="form-field">
+                <label for="comment">Коментарий</label>
+                <textarea
+                  class="comment-form"
+                  name="comment"
+                  cols="56"
+                  rows="8"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+
+              <input class="checkbox-form" type="checkbox" value="agreement" name="agreement" />
+              <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+
+              <label for="submit"></label>
+              <button class="submit-btn" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -344,6 +378,14 @@
               </svg>
             </li>
           </ul>
+        </div>
+        <div class="subscription">
+          <span>Подпишитесь на рассылку</span>
+          <form class="form-subscription">
+            <label for="email"></label>
+            <input class="subscription-mail" type="email" name="email" placeholder="E-mail" />
+            <button class="subscription-btn" type="submit">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
