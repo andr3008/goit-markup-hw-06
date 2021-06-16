@@ -138,6 +138,8 @@ img {
 .contact-link {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -437,6 +439,9 @@ img {
 .footer-container {
   display: flex;
 }
+.icon {
+  width: 231px;
+}
 
 .footer-container .icon + .icon {
   margin-left: 70px;
@@ -494,72 +499,72 @@ img {
   text-transform: uppercase;
   color: var(--primary-bg-color);
 }
-.subscription{
+.subscription {
   margin-left: 93px;
   margin-top: 12px;
-  
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--primary-bg-color)
+  color: var(--primary-bg-color);
 }
-.form-subscription{
-  display: inline-block;
+.form-subscription {
+  display: flex;
+
+  width: 570px;
+  height: 86px;
 }
 
-.subscription-mail{
-  
+.subscription-mail {
   width: 358px;
   height: 50px;
   background-color: var(--primary-second-bg-color);
   margin-top: 20px;
+  margin-right: 12px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.subscription-mail::placeholder{
+.subscription-mail::placeholder {
   padding-left: 16px;
   padding-top: 15px;
 }
-.subscription-btn{
+.subscription-btn {
   position: relative;
-  
+  margin-top: 20px;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
-  padding:0;
-  padding-right: 10px;
+
+  padding-right: 62px;
+  padding-left: 29px;
   border: 0px solid transparent;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--primary-bg-color);
 
   font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.06em;
-
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
-.subscription-btn::after{
+.subscription-btn::after {
   background-image: url(../images/modal-icon/icon\ send.svg);
-  fill:var(--primary-bg-color);
+
   width: 24px;
   height: 24px;
-  content: '';
+
   position: absolute;
+  content: '';
   top: 13px;
   right: 28px;
-
-  
- 
+  fill: var(--primary-bg-color);
 }
-
-
 
 /* Кнопка */
 
@@ -671,7 +676,6 @@ letter-spacing: 0.06em;
 }
 
 .modal-form {
-  
   height: 40px;
   background-color: #fff;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -725,11 +729,10 @@ letter-spacing: 0.06em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  
 }
 .comment-form::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  
+}
 /* Портфолио */
 
 /* Фильтры и Проекты */
