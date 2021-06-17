@@ -77,36 +77,36 @@
                 <use href="./images/modal-icon/symbol-defs-modal.svg#icon-Vector-1"></use>
               </svg>
             </button>
-            <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+            <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
             <form>
-              <div class="form-field">
-                <label for="name">Имя</label>
-                <input class="modal-form icon-person" type="text" name="user-name" />
-              </div>
+              <label class="form-field" for="name">Имя</label>
+              <input class="input-form" type="text" name="user-name" />
 
-              <div class="form-field">
-                <label for="tel">Телефон</label>
-                <input class="modal-form icon-tel" type="tel" name="tel" />
-              </div>
+              <svg width="18" height="18" class="icon-person">
+                <use
+                  href="./images/modal-icon/symbol-defs-mdal2.svg#icon-person-black-18dp-1-1"
+                ></use>
+              </svg>
 
-              <div class="form-field">
-                <label for="email">Почта</label>
-                <input class="modal-form icon-mail" type="email" name="email" />
-              </div>
+              <label class="form-field" for="tel">Телефон</label>
+              <input class="input-form icon-tel" type="tel" name="tel" />
 
-              <div class="form-field">
-                <label for="comment">Коментарий</label>
-                <textarea
-                  class="comment-form"
-                  name="comment"
-                  cols="56"
-                  rows="8"
-                  placeholder="Введите текст"
-                ></textarea>
-              </div>
+              <label class="form-field" for="email">Почта</label>
+              <input class="input-form icon-mail" type="email" name="email" />
+
+              <label class="form-field" for="comment">Коментарий</label>
+              <textarea
+                class="comment-form"
+                name="comment"
+                cols="56"
+                rows="8"
+                placeholder="Введите текст"
+              ></textarea>
 
               <input class="checkbox-form" type="checkbox" value="agreement" name="agreement" />
-              <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+              <label for="agreement"
+                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+              >
 
               <label for="submit"></label>
               <button class="submit-btn" type="submit">Отправить</button>
