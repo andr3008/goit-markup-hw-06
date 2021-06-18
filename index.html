@@ -78,35 +78,73 @@
               </svg>
             </button>
             <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-            <form>
-              <label class="form-field" for="name">Имя</label>
-              <input class="input-form" type="text" name="user-name" />
+            <form class="modal-form">
+              <label class="form-field" for="name"
+                >Имя
+                <span class="modal-form-wrap">
+                  <input class="input-form" type="text" name="user-name" />
 
-              <svg width="18" height="18" class="icon-person">
-                <use
-                  href="./images/modal-icon/symbol-defs-mdal2.svg#icon-person-black-18dp-1-1"
-                ></use>
-              </svg>
+                  <svg width="18" height="18" class="icon-form">
+                    <use
+                      href="./images/modal-icon/symbol-defs-mdal2.svg#icon-person-black-18dp-1-1"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
 
-              <label class="form-field" for="tel">Телефон</label>
-              <input class="input-form icon-tel" type="tel" name="tel" />
+              <label class="form-field" for="tel"
+                >Телефон
+                <span class="modal-form-wrap">
+                  <input class="input-form" type="tel" name="tel" />
+                  <svg width="18" height="18" class="icon-form">
+                    <use
+                      href="./images/modal-icon/symbol-defs-mdal2.svg#icon-phone-black-18dp-1-1"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="form-field" for="email"
+                >Почта
+                <span class="modal-form-wrap">
+                  <input class="input-form" type="email" name="email" />
+                  <svg width="18" height="18" class="icon-form">
+                    <use
+                      href="./images/modal-icon/symbol-defs-mdal2.svg#icon-email-black-18dp-1-1"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
+              <span>
+                <label class="form-field-comment" for="comment"
+                  >Коментарий
+                  <textarea
+                    class="comment-form"
+                    name="comment"
+                    cols="56"
+                    rows="8"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </label>
+              </span>
 
-              <label class="form-field" for="email">Почта</label>
-              <input class="input-form icon-mail" type="email" name="email" />
+              <label for="agreement" class="checkbox-label">
+                <input
+                  class="checkbox visually-hidden"
+                  type="checkbox"
+                  name="agreement"
+                  value="agreement"
+                  id="agreement"
+                />
 
-              <label class="form-field" for="comment">Коментарий</label>
-              <textarea
-                class="comment-form"
-                name="comment"
-                cols="56"
-                rows="8"
-                placeholder="Введите текст"
-              ></textarea>
+                <svg width="11" height="8" class="check-icon">
+                  <use href="./images/modal-icon/symbol-defs-check.svg#icon-Vector-check"></use>
+                </svg>
 
-              <input class="checkbox-form" type="checkbox" value="agreement" name="agreement" />
-              <label for="agreement"
-                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
-              >
+                <span class="checkbox-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a class="checkbox-text-second" href="">Условия договора</a>
+                </span>
+              </label>
 
               <label for="submit"></label>
               <button class="submit-btn" type="submit">Отправить</button>
